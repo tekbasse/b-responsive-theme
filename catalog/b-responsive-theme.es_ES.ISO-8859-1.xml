@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="b-responive-theme" locale="es_ES" charset="ISO-8859-1">
+
+  <msg key="plain">B Sensible sencillo</msg>
+  <msg key="tabbed">B Sensible con pestañas</msg>
+</message_catalog>
