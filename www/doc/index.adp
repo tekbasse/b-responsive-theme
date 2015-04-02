@@ -62,10 +62,18 @@ installation
 </h2>
 <p>
 Follow standard OpenACS package installation instructions.
-Be sure to update subsite style parameters to use /lib/plain-master in this package.
+Update subsite style parameters:
 </p>
+<ul><li>
+DefaultMaster value becomes /packages/b-responsive-theme/lib/plain-master
+</li><li>
+StreamingHead value becomes /packages/b-responsive-theme/lib/plain-streaming-head
+</li><li>
+ThemeCSS value becomes {{href /resources/b-responsive-theme/styles/default-master.css} {media all}}
+</li></ul>
+
 <p>
 It is expected that ESRG and openacs-default-theme.css will change over time. 
-To help maintain this package, originals used for blending are located in responsive-theme/www/doc/originals.
+To help maintain this package, originals used for blending are located in b-responsive-theme/www/doc/originals.
 Use diff between originals and current files to identify changes that may need to be used to update this package.
 </p>
