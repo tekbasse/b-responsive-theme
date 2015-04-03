@@ -37,12 +37,15 @@
         <if @context:rowcount@ not nil>
         <ul class="compact">
           <multiple name="context">
-          <if @context.url@ not nil>
-            <li><a href="@context.url@">@context.label@</a> @separator@</li>
-          </if>
-          <else>
-            <li>@context.label@</li>
-          </else>
+            <if @context.url@ not nil>
+              <if @context.url@ eq "/" and @ad_conn_url@ eq "/">
+              </if><else>
+                <li><a href="@context.url@">@context.label@</a> @separator@</li>
+              </else>
+            </if>
+            <else>
+              <li>@context.label@</li>
+            </else>
           </multiple>
         </ul>
         </if>

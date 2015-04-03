@@ -25,8 +25,9 @@ if { ![info exists main_content_p] } {
 #
 set system_name [ad_system_name]
 set subsite_name [lang::util::localize [subsite::get_element -element instance_name]]
+set ad_conn_url [ad_conn url ]
 
-if {[ad_conn url] eq "/"} {
+if {$ad_conn_url eq "/"} {
     set system_url ""
 } else {
     set system_url [ad_url]
