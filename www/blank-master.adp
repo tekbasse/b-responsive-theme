@@ -3,6 +3,7 @@
 <!--[if gt IE 8]><!--> <html<if @doc.lang@ not nil> lang="@doc.lang;literal@"</if> class="no-js"> <!--<![endif]-->
 <head>
     <title<if @doc.title_lang@ not nil and @doc.title_lang;literal@ ne @doc.lang;literal@> lang="@doc.title_lang;literal@"</if>>@doc.title;noquote@</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <multiple name="meta">    <meta<if @meta.http_equiv@ not nil> http-equiv="@meta.http_equiv;literal@"</if><if @meta.name@ not nil> name="@meta.name;noquote@"</if><if @meta.scheme@ not nil> scheme="@meta.scheme;noquote@"</if><if @meta.lang@ not nil and @meta.lang;literal@ ne @doc.lang;literal@> lang="@meta.lang;literal@"</if> content="@meta.content@">
 </multiple>
