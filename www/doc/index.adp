@@ -12,7 +12,7 @@ This is a responsive theme package for OpenACS web app platform.
 It's designed to make OpenACS sites viewable by most small device users as well as desktop users.
 An emphasis is placed on using only css as defined by 
 OpenACS' default theme, 
-Estra Strength Responsive Grid, and
+Extra Strength Responsive Grid, and
 css styles released with openacs-core.
 </p>
 <h2>license
@@ -110,7 +110,7 @@ and suggested changes to blank-master are in b-responsive-theme/www/.
 Use diff between OpenACS originals and their evolved ones to identify changes
 that may need to be made to this package.
 </p><p>
-Alternately, use openacs.org's CVS browser to perform the diff. A link is ususally available on the front page at openacs.org.
+Alternately, use openacs.org's CVS browser to perform the diff. A link is usually available on the front page at openacs.org.
 </p>
 <p>
   If OpenACS's default <code>www/blank-master</code> changes from an update. Just re-visit the <tt>blank-master-make</tt> link above to create a new plain-master. The old one will be renamed with a timestamp for reference in case you want to revert.
