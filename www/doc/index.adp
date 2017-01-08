@@ -61,8 +61,9 @@ id's from plain-master have been changed to classes.
 installation
 </h2>
 <p>
-Follow standard OpenACS package installation instructions.
-Update subsite style parameters:
+  Follow standard OpenACS package installation instructions.
+</p><p>
+Then update subsite style parameters:
 </p>
 <ul><li>
 DefaultMaster value becomes /packages/b-responsive-theme/lib/plain-master
@@ -72,12 +73,18 @@ StreamingHead value becomes /packages/b-responsive-theme/lib/plain-streaming-hea
 ThemeCSS value becomes {{href /resources/b-responsive-theme/styles/default-master.css} {media all}}
 </li></ul>
 <p>Consider also modifying OpenACS' blank-master to include a viewport meta tag
-  and a few other things. in the spirit of the theme by changing the MASTER
-  tag reference in file <code>b-responsive-theme/plain-master.adp</code> to:</p>
-<p><code>
-  src=/packages/b-responsive-theme/www/plain-master
-</code></p>
-<p>If changing the reference, also consider changing the reference in <code>lib/plain-streaming-head.adp</code></p>
+  and a few other things in the spirit of the theme. To do this:
+</p>
+<ol><li>
+    Visit the <a href="originals/blank-master-maker">blank-master-maker</a> page to create a revised version of OpenACS' default <code>www/blank-master</code> at <code>packages/b-responsive-theme/www/blank-master</code>.
+  </li><li>
+    Change the MASTER tag reference in the active plain-master file (<code>b-responsive-theme/lib/plain-master.adp</code>) to:</p>
+<code>
+  &lt;master "src=/packages/b-responsive-theme/www/plain-master"&gt;
+</code>
+</li><li>
+  Next, change the reference in <code>b-responsive-theme/lib/plain-streaming-head.adp</code> similarly.</p>
+</li></ol>
 <h3><a id="faqs">FAQs</a></h3>
 <p>
 How to fix this ambiguous error after changing a site-map's parameters to use a new theme?
@@ -103,7 +110,8 @@ and suggested changes to blank-master are in b-responsive-theme/www/.
 Use diff between OpenACS originals and their evolved ones to identify changes
 that may need to be made to this package.
 </p><p>
-Alternately, use openacs.org's CVS browser to perform the diff. For example, here's a 
-<a href="http://cvs.openacs.org/browse/OpenACS/openacs-4/www/blank-master.adp?r1=1.31.2.3&r2=1.29.8.3">diff
-  between oacs-5-8 and oacs-5-9 versions of blank-master.adp</a>.
+Alternately, use openacs.org's CVS browser to perform the diff. A link is ususally available on the front page at openacs.org.
+</p>
+<p>
+  If OpenACS's default <code>www/blank-master</code> changes from an update. Just re-visit the <tt>blank-master-make</tt> link above to create a new plain-master. The old one will be renamed with a timestamp for reference in case you want to revert.
 </p>
