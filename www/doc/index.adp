@@ -71,9 +71,39 @@ StreamingHead value becomes /packages/b-responsive-theme/lib/plain-streaming-hea
 </li><li>
 ThemeCSS value becomes {{href /resources/b-responsive-theme/styles/default-master.css} {media all}}
 </li></ul>
-
+<p>Consider also modifying OpenACS' blank-master to include a viewport meta tag
+  and a few other things. in the spirit of the theme by changing the MASTER
+  tag reference in file <code>b-responsive-theme/plain-master.adp</code> to:</p>
+<p><code>
+  src=/packages/b-responsive-theme/www/plain-master
+</code></p>
+<p>If changing the reference, also consider changing the reference in <code>lib/plain-streaming-head.adp</code></p>
+<h3><a id="faqs">FAQs</a></h3>
 <p>
-It is expected that ESRG and openacs-default-theme.css will change over time. 
-To help maintain this package, originals used for blending are located in b-responsive-theme/www/doc/originals.
-Use diff between originals and current files to identify changes that may need to be used to update this package.
+How to fix this ambiguous error after changing a site-map's parameters to use a new theme?
+</p>
+<p><code>
+Error: invalid non-positional argument '--href', valid are : -alternate, -href, -media, -title, -lang, -order;
+</code></p>
+<p>
+  This is the result of changing template standards with what is expected with the <strong>ThemeCSS</strong> parameter, and how blank-master interprets ThemeCSS contents. For a quick fix, try replacing the contents of ThemeCSS with:
+</p>
+<code>
+  {{href /resources/b-responsive-theme/styles/default-master.css} {media all}}
+</code>
+<p>Note the lack of a dash prefixing 'href'.</p>
+
+<h3>Package Maintenance</h3>
+<p>
+ESRG and openacs-default-theme.css and adp/tcl master templates are expected to evolve.
+To help maintain this package, originals css files used for blending
+are located in b-responsive-theme/www/doc/originals
+and suggested changes to blank-master are in b-responsive-theme/www/.
+</p><p>
+Use diff between OpenACS originals and their evolved ones to identify changes
+that may need to be made to this package.
+</p><p>
+Alternately, use openacs.org's CVS browser to perform the diff. For example, here's a 
+<a href="http://cvs.openacs.org/browse/OpenACS/openacs-4/www/blank-master.adp?r1=1.31.2.3&r2=1.29.8.3">diff
+  between oacs-5-8 and oacs-5-9 versions of blank-master.adp</a>.
 </p>

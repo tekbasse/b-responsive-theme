@@ -45,7 +45,7 @@ features
 --------
 
 This package is a blend of Extra Strength Responsive Grids 
-(ESRG) and OpenACS's default theme from release 5.8
+(ESRG) and OpenACS's default theme.
 
 ESRG: http://dfcb.github.io/extra-strength-responsive-grids
 
@@ -57,5 +57,22 @@ id's from plain-master have been changed to classes.
 installation
 ------------
 Follow standard OpenACS package installation instructions.
-Be sure to update subsite style parameters to use /lib/plain-master in this package.
+
+To change a subsite's style to B Responsive Theme:
+
+ 1. Browse to the subsite's admin/site-map
+
+ 2. Click on 'parameters' for subsite.
+
+ 3. Change DefaultMaster parameter value to:
+```
+/packages/b-responsive-theme/lib/plain-master
+```
+ 4. Change ThemeCSS parameter value to:
+
+```
+{{-href /resources/b-responsive-theme/styles/default-master.css} {media all}}
+```
+Browse to package documentation at /doc/b-responsive-theme for more installation hints.
+
 

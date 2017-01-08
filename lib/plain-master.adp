@@ -1,4 +1,7 @@
-<master src="/packages/b-responsive-theme/www/blank-master">
+<master src="/www/blank-master">
+  <if 1 false>
+    <master src="/packages/b-responsive-theme/www/blank-master">
+  </if>
 <if @doc@ defined><property name="&doc">doc</property></if>
 <if @body@ defined><property name="&body">body</property></if>
 <if @head@ not nil><property name="head">@head;noquote@</property></if>
