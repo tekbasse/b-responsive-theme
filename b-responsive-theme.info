@@ -9,17 +9,18 @@
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>t</inherit-templates-p>
     
-    <version name="5.8.1" url="http://openacs.org/repository/download/apm/b-responsive-theme-5.8.1.apm">
+    <version name="5.9.0" url="http://openacs.org/repository/download/apm/b-responsive-theme-5.9.0.apm">
         <owner url="mailto:tekbasse@yahoo.com">Benjamin Brink</owner>
         <summary>Provides a css responsive styled theme for OpenACS subsites.</summary>
-        <release-date>2015-04-02</release-date>
+        <release-date>2017-01-09</release-date>
         <description format="text/plain">Provides a css responsive styled theme for OpenaACS subsites.
 </description>
-        <license>GPL version 3</license>
-        <maturity>3</maturity>
+        <license>Gnu GPL version 2</license>
+        <license_url>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</license_url>
+        <maturity>2</maturity>
         <package_instance_name>BResponsive</package_instance_name>
 
-        <provides url="b-responsive-theme" version="5.8.1"/>
+        <provides url="b-responsive-theme" version="5.9.0"/>
         <requires url="acs-subsite" version="5.8"/>
 
         <callbacks>
