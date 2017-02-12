@@ -49,7 +49,7 @@ features
 
 <p>
 This package is a blend of 
-<a href="dfcb.github.io/extra-strength-responsive-grids">Extra Strength Responsive Grids</a> 
+<a href="http://dfcb.github.io/extra-strength-responsive-grids">Extra Strength Responsive Grids</a> 
 (ESRG) and OpenACS's default theme from release 5.8
 </p>
 <p>
