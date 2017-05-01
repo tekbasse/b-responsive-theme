@@ -15,7 +15,7 @@ well as hooking with any hardcoded styles released with openacs-core.
 license
 -------
 Copyright (c) 2015 Benjamin Brink
-po box 20, Marylhurst, OR 97036-0020 usa
+po box 193, Marylhurst, OR 97036-0193 usa
 email: tekbasse@yahoo.com
 
 OpenACS default theme parts are 
