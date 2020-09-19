@@ -36,8 +36,10 @@
     float: left;
     color: blue;    
 }
+
+# from class grid-whole  dfcb.github.com/extra-strength-responsive-grids
 .qf_table {
-    # from class grid-whole  dfcb.github.com/extra-strength-responsive-grids
+    width:100%;
     margin:0;
     clear:none;
     float:left;
@@ -51,16 +53,19 @@
 .qf_td_nonnumber {
     text-align: right;
 }
+
+# fronm class content-box dfcb.github.com/extra-strength-responsive-grids
 .qf_td {
-    # fronm class content-box dfcb.github.com/extra-strength-responsive-grids
-	height: 3.6em;
-	background: rgba(255,255,255,.4);
-	border-left: dashed 1px #c4d8f6;
-	border-right: dashed 1px #c4d8f6;
+    height: 3.6em;
+    background: rgba(255,255,255,.4);
+    border-left: dashed 1px #c4d8f6;
+    border-right: dashed 1px #c4d8f6;
 }
+
+# intentionally blank
 .qf_td_sorted {
-    # intentionally blank
 }
+
 .qf_td_unsorted {
     opacity: 0.9;
 }
@@ -72,11 +77,13 @@
     text-align: center;
     line-height: 90%;
 }
+
+# class even grid-whole
+# grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
 .qf_tr_even {
-    # class even grid-whole
     background-color: #ffffff; 
     color: inherit;
-    # grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
+    width:100%;
     margin:0;
     clear:none;
     float:left;
@@ -84,11 +91,13 @@
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
 }
+
+# grid-whole:  from  dfcb.github.com/extra-strength-responsive-grids
+# class odd grid-whole
 .qf_tr_odd {
-    # class odd grid-whole
     background-color: #f0eff0; 
     color: inherit;
-    # grid-whole:  from  dfcb.github.com/extra-strength-responsive-grids
+    width:100%;
     margin:0;
     clear:none;
     float:left;
@@ -96,11 +105,13 @@
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
 }
+
+# class grid-whole
+# grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
 .qf_tr_header {
-    # class grid-whole 
     display: flex;
-    # grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
     margin:0;
+    width:100%;
     clear:none;
     float:left;
     -moz-box-sizing:border-box;
