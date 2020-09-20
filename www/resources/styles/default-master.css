@@ -1,7 +1,8 @@
 # from q-forms
+
 .qf_sorted_first {
     font-family: monospace;
-    font-size: 70%;
+    font-size: .75em;
     font-style: normal;
     text-decoration: underline;
     padding: 0;
@@ -11,7 +12,7 @@
 .qf_sorted_last {
     display: inline;
     font-family: monospace;
-    font-size: 46%;
+    font-size: .5em;
     font-style: normal;
     text-decoration: underline;
     padding: 0;
@@ -22,14 +23,14 @@
 .qf_sorted_delimiter {
     display: inline;
     font-family: monospace;
-    font-size: 70%;
+    font-size: .75em;
     font-style: normal;
     float: left;
 }
 .qf_unsorted {
     font-family: monospace;
     text-decoration: underline;
-    font-size: 70%;
+    font-size: .75em;
     font-style: normal ;
     padding: 0;
     margin: 0;
