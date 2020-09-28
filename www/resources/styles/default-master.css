@@ -1,14 +1,18 @@
-# from q-forms
+/*  from q-forms */
+
 
 .qf_sorted_first {
+    display: inline;
     font-family: monospace;
     font-size: .75em;
     font-style: normal;
     text-decoration: underline;
     padding: 0;
     margin: 0;
-    float: left; 
+    float: left;
+    color: black;
 }
+
 .qf_sorted_last {
     display: inline;
     font-family: monospace;
@@ -38,7 +42,7 @@
     color: blue;    
 }
 
-# from class grid-whole  dfcb.github.com/extra-strength-responsive-grids
+/* from class grid-whole  dfcb.github.com/extra-strength-responsive-grids */
 .qf_table {
     width:100%;
     margin:0;
@@ -55,7 +59,7 @@
     text-align: right;
 }
 
-# fronm class content-box dfcb.github.com/extra-strength-responsive-grids
+/* fronm class content-box dfcb.github.com/extra-strength-responsive-grids */
 .qf_td {
     height: 3.6em;
     background: rgba(255,255,255,.4);
@@ -63,7 +67,7 @@
     border-right: dashed 1px #c4d8f6;
 }
 
-# intentionally blank
+/* intentionally blank */
 .qf_td_sorted {
 }
 
@@ -79,8 +83,8 @@
     line-height: 90%;
 }
 
-# class even grid-whole
-# grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
+/*  class even grid-whole */
+/*  grid-whole: from  dfcb.github.com/extra-strength-responsive-grids */
 .qf_tr_even {
     background-color: #ffffff; 
     color: inherit;
@@ -93,8 +97,8 @@
     box-sizing:border-box;
 }
 
-# grid-whole:  from  dfcb.github.com/extra-strength-responsive-grids
-# class odd grid-whole
+/* grid-whole:  from  dfcb.github.com/extra-strength-responsive-grids */
+/* class odd grid-whole  */
 .qf_tr_odd {
     background-color: #f0eff0; 
     color: inherit;
@@ -107,8 +111,9 @@
     box-sizing:border-box;
 }
 
-# class grid-whole
-# grid-whole: from  dfcb.github.com/extra-strength-responsive-grids
+/* class grid-whole */
+/* grid-whole: from  dfcb.github.com/extra-strength-responsive-grids */
+
 .qf_tr_header {
     display: flex;
     margin:0;
